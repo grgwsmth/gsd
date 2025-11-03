@@ -1,13 +1,15 @@
 ---
+slug: flexible-patterns
 layout: case-study
 title: Case study<span class="hilight">.</span>
-masthead-pill: Walmart
-masthead-intro: Releasing organisms as flexible patterns
-masthead-description: Converting complex organism components to flexible patterns, allowing for easier customization.
-masthead-image: work-landing-06.png
-masthead-caption: Pattern documentation
-masthead-alt: Pattern documentation
-masthead-duration: Part of the PX Pattern library project
+image: work-thumb-card-pattern.png
+alt: Pattern documentation
+align: end
+company: Walmart
+intro: Evolving complex components into flexible patterns
+description: Components with content slots have a high rate of detachment. They create friction for designers and confusion for engineers. I created a "Card Kit," allowing designers to more easily customize our Card component, while adhering to the coded source of truth.
+duration: Part of the PX Pattern library project
+readmore: /case-studies/flexible-patterns
 exclude: true
 ---
 

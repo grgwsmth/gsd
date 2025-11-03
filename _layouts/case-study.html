@@ -4,27 +4,106 @@
 	<div>{% include case-study-header.html %}</div>
 </section>
 
-<section class="flex flex-column flex-column-m flex-row-l">
-	<div class="w-100 w-100-m w-50-l mr0 mr0-m mr4-l">
-		<!--{% include work-pill.html company=page.masthead-pill %}-->
-		<h2 class="font-subhead f3-m f3-l dark-gray lh-copy">{{ page.masthead-intro }}</h2>
-		<p class="lh-copy f5 f4-m f4-l">{{ page.masthead-description }}</p>
-		<h3 class="mb1">Duration</h3>
-		<p class="mt0">{{ page.masthead-duration }}</p>
-	</div>
-	<div class="w-100 w-100-m w-50-l">
-		{% include figure.html image=page.masthead-image caption=page.masthead-caption %}
+<section class="grid--content">
+	<div class="expand-m">
+	{% assign pl_page = site.pages | where: 'slug', 'pattern-libraries' | first %}
+	{% assign co_page = site.pages | where: 'slug', 'complex-organisms' | first %}
+	{% assign fp_page = site.pages | where: 'slug', 'figma-plugin' | first %}
+	{% assign m_page = site.pages | where: 'slug', 'mobile' | first %}
+	<!--
+	{% assign dm_page = site.pages | where: 'slug', 'documentation' | first %}
+	{% assign fx_page = site.pages | where: 'slug', 'flexible-patterns' | first %}
+	-->
+	{% assign gv_page = site.pages | where: 'slug', 'governance' | first %}
+	{% if page.slug == "pattern-libraries" %}
+	{%
+	include work-card.html
+	image=pl_page.image
+	alt=pl_page.alt
+	align=pl_page.align
+	company=pl_page.company
+	intro=pl_page.intro
+	description=pl_page.description
+	duration=pl_page.duration
+	%}
+	{% endif %}
+	{% if page.slug == "complex-organisms" %}
+	{%
+	include work-card.html
+	image=co_page.image
+	alt=co_page.alt
+	align=co_page.align
+	company=co_page.company
+	intro=co_page.intro
+	description=co_page.description
+	duration=co_page.duration
+	%}
+	{% endif %}
+	{% if page.slug == "figma-plugin" %}
+	{%
+	include work-card.html
+	image=fp_page.image
+	alt=fp_page.alt
+	align=fp_page.align
+	company=fp_page.company
+	intro=fp_page.intro
+	description=fp_page.description
+	duration=fp_page.duration
+	%}
+	{% endif %}
+	{% if page.slug == "mobile" %}
+	{%
+	include work-card.html
+	image=m_page.image
+	alt=m_page.alt
+	align=m_page.align
+	company=m_page.company
+	intro=m_page.intro
+	description=m_page.description
+	duration=m_page.duration
+	%}
+	{% endif %}		
+	{% if page.slug == "documentation" %}
+	{%
+	include work-card.html
+	image=dm_page.image
+	alt=dm_page.alt
+	align=dm_page.align
+	company=dm_page.company
+	intro=dm_page.intro
+	description=dm_page.description
+	duration=dm_page.duration
+	%}
+	{% endif %}
+	{% if page.slug == "flexible-patterns" %}
+	{%
+	include work-card.html
+	image=fx_page.image
+	alt=fx_page.alt
+	align=fx_page.align
+	company=fx_page.company
+	intro=fx_page.intro
+	description=fx_page.description
+	duration=fx_page.duration
+	%}
+	{% endif %}
+	{% if page.slug == "governance" %}
+	{%
+	include work-card.html
+	image=gv_page.image
+	alt=gv_page.alt
+	align=gv_page.align
+	company=gv_page.company
+	intro=gv_page.intro
+	description=gv_page.description
+	duration=gv_page.duration
+	%}
+	{% endif %}
 	</div>
 </section>
 
 <section class="grid--content">
 	{{ content }}
 </section>
-
-<!--
-<section class="grid--content mt2">
-	{% include post-nav.html %}
-</section>
--->
 
 {% include footer.html %}

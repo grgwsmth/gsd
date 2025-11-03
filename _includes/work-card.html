@@ -1,21 +1,37 @@
-<div class="flex flex-column h-100 mt4 mt0-m mt0-l br3 bg-white overflow-hidden work-card">
-	{% if include.readmore-link %}
-	<a href="{{include.readmore-link}}">
-		<img class="ma0 w-100" src="img/{{include.image}}" alt="{{include.alt}}">
-	</a>
-	{% else %}
-	<img class="ma0 w-100" src="img/{{include.image}}" alt="{{include.alt}}">
-	{% endif %}
-	<div class="ma0 pa4">
-		<!--{% include work-pill.html company=include.company %}-->
-		<h2 class="f4">{{include.title}}</h2>
-		<p class="lh-copy f5">{{include.description}}</p>
-		{% if include.readmore-link %}
-		<p class="lh-solid f5">
-			<a href="{{include.readmore-link}}">View project</a>
-		</p>
+{% if page.slug == "index" %}
+<div class="flex-column-s flex-column-m flex-l mb5 br3 bg-white overflow-hidden work-card">
+{% else %}
+<div class="flex-column-s flex-column-m flex-l br3 bg-white overflow-hidden work-card">
+{% endif %}
+	{% if include.align == "center" %}
+	<div class="w-100 w-100-m w-50-l flex items-center justify-center work-card-bg">
+		{% if include.readmore %}
+		<a href="{{include.readmore}}">
+			<img class="ma0 db w-100" src="/img/{{include.image}}" alt="{{include.alt}}">
+		</a>
 		{% else %}
-		<p class="lh-solid f6 light-silver">Case study coming soon.</p>
+		<img class="ma0 db w-100" src="/img/{{include.image}}" alt="{{include.alt}}">
+		{% endif %}
+	</div>
+	{% else %}
+	<div class="w-100 w-100-m w-50-l flex items-end justify-center work-card-bg">
+		{% if include.readmore %}
+		<a href="{{include.readmore}}">
+			<img class="ma0 db w-100" src="/img/{{include.image}}" alt="{{include.alt}}">
+		</a>
+		{% else %}
+		<img class="ma0 db w-100" src="/img/{{include.image}}" alt="{{include.alt}}">
+		{% endif %}
+	</div>	
+	{% endif %}
+	<div class="w-100 w-100-m w-50-l ma0 pa4 pa5-m pa5-l bt bt-m bt-0-l bl-l b--black-10">
+		{% include work-pill.html company=include.company %}
+		<h2 class="f4">{{include.intro}}</h2>
+		<p class="lh-copy f5">{{include.description}}</p>
+		{% if include.readmore %}
+		<p class="lh-solid f5">
+			<a href="{{include.readmore}}">Read more</a>
+		</p>
 		{% endif %}
 	</div>
 </div>

@@ -1,33 +1,33 @@
 ---
+slug: figma-plugin
 layout: case-study
 title: Case study<span class="hilight">.</span>
-masthead-pill: Walmart
-masthead-intro: Leveraging AI to improve designer experience
-masthead-description: Using Cursor (AI code editor) to build a Figma plugin, allowing designers to easily construct complex organisms..
-masthead-image: work-landing-02.png
-masthead-caption: Figma + Cursor
-masthead-alt: Figma and Cursor logos
-masthead-duration: Q1/Q2, FY26 (April 2025 - May 2025)
+image: work-thumb-ai.png
+alt: Figma and Cursor logos
+align: center
+company: Walmart
+intro: Evolving the designer experience in Figma
+description: I used Cursor (AI code editor) to build a Figma plugin, allowing designers to easily create variations of a complex Side Navigation component. I was able to accomplish, on my own, what would have previously required a dedicated engineering resource. Designers can quickly iterate their Side Navigation elements without the need to submit a ticket for a library update.
+duration: Q1/Q2, FY26 (April 2025 - May 2025)
+readmore: /case-studies/figma-plugin
 exclude: true
 ---
 
-{% include section-title.html label="Background" %}
+{% include section-title.html label="Summary" %}
 
-{% include copy-block.html copy="As we moved into FY26, Walmart's business leadership was encouraging design and tech teams to embrace AI tools, and find ways to use them to improve our workflows. A quarterly design summit was dedicated to the topic of new AI tools. Design leadership had given the design system team a directive to find ways to automate complex aspects of our systems, to improve user experience." %}
+{% include copy-block-note.html copy="This summary shows the steps I took to build this proprietary Figma plugin. I'd be happy to present a more detailed case study, and demo the plugin, at your convenience!" %}
 
-{% include case-study-h3.html label="My role & responsibilites" %}
-
-{% include copy-block.html copy="Looking for an interesting way to leverage my previous front-end development experience, I decided that exploring Figma plugins would be an exciting way to approach the automated construction of complex components." %}
+{% include copy-block.html copy="As we moved into FY26, Walmart's business leadership encouraged design and tech teams to embrace AI tools, and find ways to use them to improve our workflows. I saw this as an opportunity to leverage my previous front-end development experience, and I built a plugin to automate the customization of a complex component." %}
 
 {% include figure.html image="case-studies/figma-plugin.png" caption="Figma plugin development" %}
 
 {% include section-title.html label="Challenge" %}
 
-{% include copy-block.html copy="One of the largest component sets in the PX Pattern Library, a Walmart Enterprise pattern library, is the Side Navigation component set, which we refer to as the 'SideNav' component. The SideNav component set is made up of multiple atoms, molecules, and organisms. It's highly flexible, and it's organized in the library in such a way that library maintainers can recreate variations of the SideNav for any product in Walmart's Enterprise business pillar." %}
+{% include copy-block.html copy="One of the largest component sets in the PX Pattern Library, a Walmart Enterprise pattern library, is the Side Navigation component set. The 'Side Nav' component set is made up of multiple atoms, molecules, and organisms. It's highly flexible, and it's organized in the library in such a way that library maintainers can recreate variations for any product in Walmart's Enterprise business pillar." %}
 
 {% include figure-big.html image="case-studies/figma-plugin-sidenav.png" caption="PX Pattern Library SideNav components" %}
 
-{% include copy-block.html copy="The only downside of this component set, which is an aspect of any such complex component set, is that it requires time consuming collaboration with the pattern library team when someone needs a variation or iteration. To maintain library integrity, and to ensure that new variations are constructed correctly, users must:" %}
+{% include copy-block.html copy="One downside of such complex components is that time consuming collaboration with the pattern library team is required when someone needs a variation or iteration. To maintain library integrity, and to ensure that new variations are constructed correctly, users must:" %}
 
 - File a ticket with the pattern library team.
 - Submit a hierarchy of parent/child links requested in the new variation.
@@ -36,11 +36,11 @@ exclude: true
 	- Go through the review/approval/merge process for the work, in Figma.
 	- Publish & release the new/updated components in the library.
 
-{% include copy-block.html copy="Since engineers use the same atoms & molecules to construct a SideNav, in React, it's fortunately easy for them to follow design comps when parent and child links change. But the design process is slower than we'd like it to be." %}
+{% include copy-block.html copy="Since engineers use the same atoms & molecules to construct a Side Nav, in React, it's fortunately easy for them to follow design comps when parent and child links change. But the design process is slower than we'd like it to be." %}
 
 {% include section-title.html label="Opportunity" %}
 
-{% include copy-block.html copy="I saw this as a great candidate for Figma plugin exploration. If a user can fill in a form, in a plugin UI, and output the assembled component set to their design file, they would require no involvement on the part of the pattern library team. Designers can iterate as many versions of the SideNav as needed, and dispose of any previous versions. As long as they don't change its foundational structure (spacing, font sizes, etc.), engineers can use the system components in React." %}
+{% include copy-block.html copy="I saw this as a great candidate for Figma plugin exploration. If a user can fill in a form, in a plugin UI, and output the assembled component set to their design file, they would require no involvement on the part of the pattern library team. Designers can iterate as many versions of the Side Nav as needed, and dispose of any previous versions. As long as they don't change its foundational structure (spacing, font sizes, etc.), engineers can use the system components in React." %}
 
 {% include section-title.html label="Solutions" %}
 
@@ -53,11 +53,9 @@ Figma provides extensive information in their [Plugin Quickstart Guide](link htt
 
 {% include copy-block.html copy="My first impression of Cursor was that it's a clone of VS Code with a built-in engineering partner. 🤓" %}
 
-{% include section-title.html label="Solutions" %}
-
 {% include case-study-h3.html label="Step 2: The plugin modal UI" %}
 
-{% include copy-block.html copy="With some basic coding experience, getting the plugin modal UI set up is fairly easy. The HTML & CSS for this UI is very basic. I was able to add the necessary JavaScript to manipulate the DOM based on user input." %}
+{% include copy-block.html copy="As a designer with coding experience, getting the plugin modal UI set up was fairly easy. I was able to add the necessary JavaScript to manipulate the DOM based on user input." %}
 
 - User adds/removes as many parent-child navigation groups as needed.
 - Enter link labels into the input fields.
@@ -77,11 +75,13 @@ Figma provides extensive information in their [Plugin Quickstart Guide](link htt
 
 {% include figure-big.html image="case-studies/figma-plugin-output-v2.png" caption="The Figma PX Sidenav plugin output" %}
 
+<!--
 {% include section-title.html label="Next steps" %}
 
 - While the icons are easy to change manually, it would be helpful to include an additional form element (a Select, for example) in the plugin UI, allowing the user to choose each leading icon variant.
 - It could eliminate confusion if designers filled in another form element with the name of their app or team, and the component would be named accordingly when it's generated. They can do this manually, but adding in the automation would be an extra bonus.
 - A video tutorial would be helpful for designers using this plugin for the first time. As always, education and outreach goes a long way, when delivering new design system tools. 
+-->
 
 {% include section-title.html label="Learnings" %}
 

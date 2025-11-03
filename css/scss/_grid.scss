@@ -2,20 +2,21 @@
  * CSS Grid Settings
  */
 
-/* 
-Tachyons breakpoint settings, for reference 
-$breakpoint-not-small: 'screen and (min-width: 768px)';
-$breakpoint-medium: 'screen and (min-width: 768px) and (max-width: 1280px)';
-$breakpoint-large: 'screen and (min-width: 1280px)';
-*/
+/**
+ * My custom overwrites of the Tachyons breakpoints,
+ * added here for reference
+ * $breakpoint-not-small: 'screen and (min-width: 768px)';
+ * $breakpoint-medium: 'screen and (min-width: 768px) and (max-width: 1000px)';
+ * $breakpoint-large: 'screen and (min-width: 1000px)';
+ */
 
 /**
- * New breakpoint variables
+ * Breakpoint variables for my custom grid styles
  */
 $bp0: 1440px;
 $bp1: 1280px;
 $bp2: 1024px;
-$bp3: 800px;
+$bp3: 768px;
 
 /**
  * Content minimum
@@ -40,37 +41,25 @@ $content-min: 200px;
 // .grid {}
 
 .grid--content {
-
-	// mobile first: everything is full width
 	width: 100%;
-
 	@media only screen and (min-width: $bp3) {
-
-		// At breakpoint $bp3 (800px) turn on display:grid;
 		display: grid;
-
 		/*
 		fr = fractional unit (one part of the available space)
 		For instance: 1fr 1fr 1fr 1fr (four columns, each column is 25%)
 		Set up grid columns 1fr 1fr [content] 1fr 1fr
 		The [content] will be no less than 200px and no more than 800px
-		
 		Column numbers, L to R
 		1     2     3     4     5     6
 		|-----|-----|-----|-----|-----|
-
 		Column numbers, R to L
 		-6   -5    -4    -3    -2    -1
 		|-----|-----|-----|-----|-----|
 		*/
-
 		grid-template-columns: 1fr 1fr minmax($content-min, $bp3) 1fr 1fr;
-
-		// Gap between columns
 		grid-gap: 0;
-
 		/*
-		At this breakpoint, all content fills column 3
+		At this breakpoint, all content fills column 3.
 		Just have to make sure every parent element
 		that might show up in the content is accounted for
 		*/
@@ -83,31 +72,21 @@ $content-min: 200px;
 		ol {
 			grid-column: 3;
 		}
-
-		// figures with the class .big will start at 1
-		// anb span to -1 (should be the same as using 6??)
-		>figure.big {
-			grid-column: 1 / -1;
-			// margin: 1em 1em;
-			margin-top: 2rem;
-		}
-
-		// figures will start at 2 and span to -2
-		// (should be the same is using 5??)
 		>figure {
-			grid-column: 2 / -2;
-			// margin: 1em 1em;
+			grid-column: 2 / 5;
 			margin-top: 2rem;
 		}
-
-		// Expand the header (or other content) a bit more
+		>figure.big {
+			grid-column: 1 / 6;
+			margin-top: 2rem;
+		}
+		>.expand-m {
+			grid-column: 2 / 5;
+		}
 		>.expand {
 			grid-column: 1 / -1;
-			// margin: 1em 1em;
-			margin-top: 2rem;
 		}
 	}
-
 }
 
 /**
@@ -115,26 +94,13 @@ $content-min: 200px;
  * but forcing content into two columns
  */
 .grid--work {
-
-	// mobile first
 	width: 100%;
-
 	@media only screen and (min-width: $bp3) {
-
-		// At breakpoint $bp3 (800px) turn on display:grid;
 		display: grid;
-
-		// Two columns
 		grid-template-columns: 1fr 1fr;
-
-		// Gap between columns
 		grid-gap: 4rem;
-
-		// figures with the class .big will start at 1
-		// anb span to -1 (should be the same as using 6??)
 		>figure.big {
-			grid-column: 1 / -1;
-			// margin: 1em 1em;
+			grid-column: 1 / 6;
 			margin-top: 2rem;
 		}
 	}

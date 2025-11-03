@@ -4,7 +4,6 @@ title: Writing<span class="hilight">.</span>
 navlabel: Writing
 intro: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 exclude: true
-weight: 3
 ---
 
 {% include section-title.html label="Articles" %}

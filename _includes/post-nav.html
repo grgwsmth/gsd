@@ -5,16 +5,15 @@
 		<a href="{{page.previous.url}}" class="flex items-center no-underline">
 			<span class="unsighted">Previous post:</span>
 			<span aria-hidden="true" class="f3 mr2">&leftarrow;</span>
-			{{page.previous.title}}
+			{{ page.previous.title }}
 		</a>
 	</p>
 	{% endif %}
-
 	{% if page.next.url %}
 	<p class="lh-copy f5 f4-m f4-l tr ml4-ns">
 		<a href="{{page.next.url}}" class="flex items-center no-underline">
 			<span class="unsighted">Next post:&nbsp;</span>
-			{{page.next.title}}
+			{{ page.next.title }}
 			<span aria-hidden="true" class="f3 ml2">&rightarrow;</span>
 		</a>
 	</p>
@@ -25,7 +24,7 @@
 	<p class="dib tr lh-copy f5 f4-m f4-l">
 		<a href="{{page.next.url}}" class="flex items-center no-underline">
 			<span class="unsighted">Next post:&nbsp;</span>
-			{{page.next.title}}
+			{{ page.next.title }}
 			<span aria-hidden="true" class="f3 ml2">&rightarrow;</span>
 		</a>
 	</p>

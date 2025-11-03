@@ -1,0 +1,94 @@
+<!-- mobile first -->
+ <div class="db dn-m dn-l mv4">
+	<section class="grid--content">
+		<div class="work-card br3 bg-white overflow-hidden pa4">
+			<div class="mb3">
+				<h4 class="f5 mt0 mb2 pb2 bb b--black-20">⏰ Duration</h4>
+				<p class="f6 ma0 mr2 lh-copy">{{ include.duration }}</p>
+			</div>
+			<div class="mb3">
+				<h4 class="f5 mt0 mb2 pb2 bb b--black-20">🧰 Team</h4>
+				<ul class="ma0 mr2">
+					<li class="f6 lh-copy">{{ include.teamone }}</li>
+					<li class="f6 lh-copy">{{ include.teamtwo }}</li>
+					<li class="f6 lh-copy">{{ include.teamthree }}</li>
+					{% if include.teamfour %}
+					<li class="f6 lh-copy">{{ include.teamfour }}</li>
+					{% endif %}
+					{% if include.teamfive %}
+					<li class="f6 lh-copy">{{ include.teamfive }}</li>
+					{% endif %}
+					{% if include.teamsix %}
+					<li class="f6 lh-copy">{{ include.teamsix }}</li>
+					{% endif %}
+					{% if include.teamseven %}
+					<li class="f6 lh-copy">{{ include.teamseven }}</li>
+					{% endif %}
+					{% if include.teameight %}
+					<li class="f6 lh-copy">{{ include.teameight }}</li>
+					{% endif %}
+					{% if include.teamnine %}
+					<li class="f6 lh-copy">{{ include.teamnine }}</li>
+					{% endif %}
+					{% if include.teamten %}
+					<li class="f6 lh-copy">{{ include.teamten }}</li>
+					{% endif %}
+				</ul>
+			</div>
+			<div class="mb0">		
+				<h4 class="f5 mt0 mb2 pb2 bb b--black-20">🤓 My role</h4>
+				<p class="f6 ma0 lh-copy">
+					<span class="b">{{include.mytitle }}</span>
+					<br/>
+					{{ include.myrole }}
+				</p>		
+			</div>	
+		</div>
+	</section>
+</div>
+<!-- desktop version -->
+<div class="dn db-m db-l mv4">
+	<section class="grid--content">
+		<div class="work-card br3 bg-white overflow-hidden pa4">
+			<div class="flex justify-between bb b--black-20">
+				<h4 class="f5 mt0 mr2 mb2 w-30">⏰ Duration</h4>
+				<h4 class="f5 mt0 mr2 mb2 w-30">🧰 Team</h4>
+				<h4 class="f5 mt0 mb2 w-40">🤓 My role</h4>
+			</div>
+			<div class="flex pv2 justify-between">
+				<p class="f6 ma0 mr2 w-30 lh-copy">{{ include.duration }}</p>
+				<ul class="ma0 mr2 w-30">
+					<li class="f6 lh-copy">{{ include.teamone }}</li>
+					<li class="f6 lh-copy">{{ include.teamtwo }}</li>
+					<li class="f6 lh-copy">{{ include.teamthree }}</li>
+					{% if include.teamfour %}
+					<li class="f6 lh-copy">{{ include.teamfour }}</li>
+					{% endif %}
+					{% if include.teamfive %}
+					<li class="f6 lh-copy">{{ include.teamfive }}</li>
+					{% endif %}
+					{% if include.teamsix %}
+					<li class="f6 lh-copy">{{ include.teamsix }}</li>
+					{% endif %}
+					{% if include.teamseven %}
+					<li class="f6 lh-copy">{{ include.teamseven }}</li>
+					{% endif %}
+					{% if include.teameight %}
+					<li class="f6 lh-copy">{{ include.teameight }}</li>
+					{% endif %}
+					{% if include.teamnine %}
+					<li class="f6 lh-copy">{{ include.teamnine }}</li>
+					{% endif %}
+					{% if include.teamten %}
+					<li class="f6 lh-copy">{{ include.teamten }}</li>
+					{% endif %}				
+				</ul>
+				<p class="f6 ma0 w-40 lh-copy">
+					<span class="b">{{include.mytitle }}</span>
+					<br/>
+					{{ include.myrole }}
+				</p>
+			</div>		
+		</div>
+	</section>
+</div>
