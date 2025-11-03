@@ -123,3 +123,7 @@ Users will commonly ask why a design system task can't be completed on a timelin
 {% include figure.html image="case-studies/governance-3a.png" caption="Modify for scale section" %}
 
 {% include copy-block.html copy="Processes vary based on the project intention and the requirements of the product design directors, but if we adhere to the skeleton of the design system's methodology, we deliver reliable components and patterns, and our users have a clear understanding of our role and our timeline." %}
+
+{% include section-title.html label="Get in touch" %}
+
+{% include copy-block-last-note.html copy="I welcome the opportunity to discuss this project in more detail, as well as more of my design system work!" %}

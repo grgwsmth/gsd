@@ -86,3 +86,7 @@ Figma provides extensive information in their [Plugin Quickstart Guide](link htt
 {% include section-title.html label="Learnings" %}
 
 {% include copy-block.html copy="Overall, I'm pretty amazed at how easy it is to build a complex Figma plugin, using Cursor's conversational UI. I think it's definitely still a requirement that someone building a Figma plugin with Cursor have a comfortable level of knowledge of JavaScript, in order to write effective prompts. But it allowed me to complete this task without involving an engineering partner. I would want a qualified engineer to help with some debugging, and to review the code before shipping, but the ability to do this without taking up the design system's engineering resources was highly rewarding!" %}
+
+{% include section-title.html label="Get in touch" %}
+
+{% include copy-block-last-note.html copy="I welcome the opportunity to discuss this project in more detail, as well as more of my design system work!" %}

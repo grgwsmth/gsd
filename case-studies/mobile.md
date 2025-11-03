@@ -78,3 +78,7 @@ myrole="Conduct research & audits, propose design solutions, collaborate with en
 {% include copy-block.html copy="In the end, we found that offering a sticker sheet of customized native components was a small lift for the design system team, and a helpful asset for designers. This, along with some formal documentation, served as a good starting point that would save designers time, and give them a conversation point with their engineering partners. The time savings for iOS and Android engineers was the biggest win." %}
 
 {% include figure.html image="case-studies/mobile-docs.png" caption="Excerpt of documentation for use of native iOS and Android date picker & calendar components" alt="Excerpt of documentation for use of native iOS and Android date picker & calendar components" %}
+
+{% include section-title.html label="Get in touch" %}
+
+{% include copy-block-last-note.html copy="I welcome the opportunity to discuss this project in more detail, as well as more of my design system work!" %}
