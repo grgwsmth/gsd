@@ -1,23 +1,29 @@
 /case-studies/pattern-libraries
-  Basic-Auth: greg:work@123
+  Basic-Auth: greg:Work@123
 
 /case-studies/pattern-libraries.html
-  Basic-Auth: greg:work@123
+  Basic-Auth: greg:Work@123
 
 /case-studies/complex-organisms
-  Basic-Auth: greg:work@123
+  Basic-Auth: greg:Work@123
 
 /case-studies/complex-organisms.html
-  Basic-Auth: greg:work@123
+  Basic-Auth: greg:Work@123
 
 /case-studies/figma-plugin
-  Basic-Auth: greg:work@123
+  Basic-Auth: greg:Work@123
 
 /case-studies/figma-plugin.html
-  Basic-Auth: greg:work@123
+  Basic-Auth: greg:Work@123
+
+/case-studies/mobile
+  Basic-Auth: greg:Work@123
+
+/case-studies/mobile.html
+  Basic-Auth: greg:Work@123
 
 /case-studies/governance
-  Basic-Auth: greg:work@123
+  Basic-Auth: greg:Work@123
 
 /case-studies/governance.html
-  Basic-Auth: greg:work@123
+  Basic-Auth: greg:Work@123
