@@ -8,9 +8,15 @@ weight: 2
 
 <div>
 
-<p class="lh-solid mb5 f6 f5-m f5-l"><a href="https://drive.google.com/file/d/1AfwY0_dvc7CJeS4ZNFDs-sroI3RzAnSE/view?usp=sharing" target="_blank">PDF Resume</a></p>
+<p class="lh-solid mb5 f6 f5-m f5-l"><a href="https://drive.google.com/file/d/1soJ6XP_OId1YfvKm-tFAEv486VkinYcl/view?usp=sharing" target="_blank">PDF Resume</a></p>
 
-<h3 class="lh-title f4 f3-m f3-l pb2 bb b--black-20">Professional Experience</h3>
+<h3 class="lh-title f4 f3-m f3-l pb2 bb b--black-20">Areas of Expertise</h3>
+<p class="lh-copy f6 f5-m f5-l">Design System Leadership, Cross-Functional Collaboration, Engineering Collaboration, Roadmap Planning & Prioritization, Design System Mentorship/Education/Support, User Research/Testing, Design Tokens/Theming, Figma Component Construction/Documentation/Engineering Specification, Quality Assurance, Accessible Component Standards, Design System Library Maintenance/Governance/Iteration</p>
+
+<h3 class="lh-title f4 f3-m f3-l pb2 bb b--black-20">Tools / Proficiencies</h3>
+<p class="lh-copy f6 f5-m f5-l">Figma Expert, FigJam, Sketch, Photoshop, Illustrator, InDesign, VS Code, Cursor, Figma Plugin Development, HTML/CSS/JavaScript, Gatsby, Jekyll, Git, GitHub, Jira, Confluence, Airtable</p>
+
+<h3 class="lh-title f4 f3-m f3-l pb2 bb b--black-20">Experience</h3>
 
 <!-- Living Design -->
 <h4 class="lh-title mb3 f5 f4-m f4-l pb2 bb b--black-20">Walmart</h4>
