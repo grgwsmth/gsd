@@ -14,7 +14,7 @@ weight: 2
 
 <!-- Living Design -->
 <h4 class="lh-title mb3 f5 f4-m f4-l pb2 bb b--black-20">Walmart</h4>
-<p class="lh-solid f6 f5-m f5-l b">Sr. UX Designer, Design Systems: 02/2020 - 06/2025</p>
+<p class="lh-solid f6 f5-m f5-l b">Sr. UX Designer, Design Systems: March 2020 - June 2025</p>
 <p class="lh-solid f6 f5-m f5-l">Portland, OR / Remote</p>
 <ul class="mt0">
 	<li class="lh-copy f6 f5-m f5-l">Designed, maintained and iterated components & patterns in Figma.</li>
@@ -31,7 +31,7 @@ weight: 2
 
 <!-- PWA -->
 <h4 class="lh-title mb3 f5 f4-m f4-l pb2 bb b--black-20">Walmart</h4>
-<p class="lh-solid f6 f5-m f5-l b">Sr. UX Designer, PWA: 10/10/2019 - 10/10/202</p>
+<p class="lh-solid f6 f5-m f5-l b">Sr. UX Designer, PWA: Feb 2019 - Feb 2020</p>
 <p class="lh-solid f6 f5-m f5-l">Portland, OR</p>
 <ul class="mt0">
 	<li class="lh-copy f6 f5-m f5-l">Collaborated with engineers to establish performance-first UX priorities for three primary commerce experiences: home page, product detail page, cart.</li>
@@ -43,7 +43,7 @@ weight: 2
 
 <!-- PREP -->
 <h4 class="lh-title mb3 f5 f4-m f4-l pb2 bb b--black-20">Nike</h4>
-<p class="lh-solid f6 f5-m f5-l b">Sr. UX Designer, Nike Technology: 10/10/2019 - 10/10/202</p>
+<p class="lh-solid f6 f5-m f5-l b">Sr. UX Designer, Nike Technology: Sep 2017 - Jan 2019</p>
 <p class="lh-solid f6 f5-m f5-l">Contract position via TEKSystems, Hillsboro, OR.</p>
 <ul class="mt0">
 	<li class="lh-copy f6 f5-m f5-l">Designed B2B web application enabling Nike retail customers to select and purchase product assortments.</li>
@@ -55,7 +55,7 @@ weight: 2
 
 <!-- Athlete Platform / Store Tools -->
 <h4 class="lh-title mb3 f5 f4-m f4-l pb2 bb b--black-20">Nike</h4>
-<p class="lh-solid f6 f5-m f5-l b">Sr. UX Designer, Store Tools: 10/10/2019 - 10/10/202</p>
+<p class="lh-solid f6 f5-m f5-l b">Sr. UX Designer, Store Tools: April 2017 - June 2017</p>
 <p class="lh-solid f6 f5-m f5-l">Contract position via TEKSystems, Beaverton, OR.</p>
 <ul class="mt0">
 	<li class="lh-copy f6 f5-m f5-l">Built Zero-to-one app architecture and defined new UX for the Athlete Platform, an iOS application to help in-store associates manage their employment.</li>
