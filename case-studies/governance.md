@@ -36,7 +36,7 @@ mytitle = "Senior UX Designer"
 myrole="Comp analysis of various public design systems to understand industry standards. Collaborate with engineers to apply agile methodologies to our design practice. Document and socialize our official team process."
 %}
 
-<!--
+{% comment %}
 {% include section-title.html label="Impact" %}
 
 {% include copy-block.html copy="How a governance model works/helps..." %}
@@ -49,7 +49,7 @@ myrole="Comp analysis of various public design systems to understand industry st
 - Communicate "how we work" principles to new system team members, product design users, engineering users, product partners, and business partners.
 - Manage the flow of work.
 - Manage user expectations when making requests of the team.
--->
+{% endcomment %}
 
 {% include section-title.html label="Challenge" %}
 
@@ -103,12 +103,12 @@ myrole="Comp analysis of various public design systems to understand industry st
 
 {% include figure-big.html image="case-studies/governance-2.png" caption="Simplified approach" %}
 
-<!--
+{% comment %}
 {% include figure.html image="case-studies/governance-2a.png" caption="Simplified approach section" %}
 
 Users will commonly ask why a design system task can't be completed on a timeline that aligns with delivery of their product. This is an artifact we can share that demonstrates the necessary steps we take, and clearly explains how system work is intentionally different than product work.
 {: .mt4 .lh-copy .f5 .f4-m .f4-l }
--->
+{% endcomment %}
 
 {% include section-title.html label="Further evolution" %}
 

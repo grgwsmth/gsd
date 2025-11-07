@@ -10,10 +10,10 @@
 	{% assign co_page = site.pages | where: 'slug', 'complex-organisms' | first %}
 	{% assign fp_page = site.pages | where: 'slug', 'figma-plugin' | first %}
 	{% assign m_page = site.pages | where: 'slug', 'mobile' | first %}
-	<!--
+	{% comment %}
 	{% assign dm_page = site.pages | where: 'slug', 'documentation' | first %}
 	{% assign fx_page = site.pages | where: 'slug', 'flexible-patterns' | first %}
-	-->
+	{% endcomment %}
 	{% assign gv_page = site.pages | where: 'slug', 'governance' | first %}
 	{% if page.slug == "pattern-libraries" %}
 	{%

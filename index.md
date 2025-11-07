@@ -10,10 +10,10 @@ exclude: true
 {% assign co_page = site.pages | where: 'slug', 'complex-organisms' | first %}
 {% assign fp_page = site.pages | where: 'slug', 'figma-plugin' | first %}
 {% assign m_page = site.pages | where: 'slug', 'mobile' | first %}
-<!--
+{% comment %}
 {% assign dm_page = site.pages | where: 'slug', 'documentation' | first %}
 {% assign fx_page = site.pages | where: 'slug', 'flexible-patterns' | first %}
--->
+{% endcomment %}
 {% assign gv_page = site.pages | where: 'slug', 'governance' | first %}
 {%
 include work-card.html
@@ -55,7 +55,7 @@ intro=m_page.intro
 description=m_page.description
 readmore=m_page.readmore
 %}
-<!--
+{% comment %}
 {%
 include work-card.html
 image=dm_page.image
@@ -76,7 +76,7 @@ intro=fx_page.intro
 description=fx_page.description
 readmore=fx_page.readmore
 %}
--->
+{% endcomment %}
 {%
 include work-card.html
 image=gv_page.image
