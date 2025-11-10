@@ -107,7 +107,7 @@ $content-min: 200px;
 }
 
 /**
- * The smaller "design system strengths" cards on the home page
+ * The "design system strengths" cards on the home page
  */
 .skill-container {
 	display: grid;
@@ -121,3 +121,22 @@ $content-min: 200px;
 	}
 }
 .skill-item {}
+
+
+/**
+ * The "reference" cards on the about page
+ */
+.reference-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1rem;
+	/*
+	@media (min-width: 600px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	*/
+	@media (min-width: 900px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+.reference-item {}

@@ -1,7 +1,25 @@
 {% include header.html %}
 
 <section class="grid--content">
-	<div>{% include page-header.html %}</div>
+	<div>
+		{% include page-header.html %}
+		{% comment %}
+			{% if page.slug == "about" %}
+			{% include section-title.html label="References" %}
+			{% endif %}
+		{% endcomment %}
+	</div>
+</section>
+
+{% if page.slug == "about" %}
+<section class="grid--content mt4">
+	<div class="expand-m">
+		{% include reference-cards.html %}
+	</div>
+</section>
+{% endif %}
+
+<section class="grid--content">
 	{{ content }}
 </section>
 
