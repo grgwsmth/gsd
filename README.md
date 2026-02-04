@@ -65,19 +65,15 @@ Tachyons is mobile first.
 
 These lines define your responsive breakpoint defaults:
 
-`
-$breakpoint-not-small: 'screen and (min-width: 30em)' !default;
+`$breakpoint-not-small: 'screen and (min-width: 30em)' !default;
 $breakpoint-medium: 'screen and (min-width: 30em) and (max-width: 60em)' !default;
-$breakpoint-large: 'screen and (min-width: 60em)' !default;
-`
+$breakpoint-large: 'screen and (min-width: 60em)' !default;`
 
 Comment out or delete these lines and replace them with your new screen width ranges. For example:
 
-`
-$breakpoint-not-small: 'screen and (min-width: 40em)' !default;
+`$breakpoint-not-small: 'screen and (min-width: 40em)' !default;
 $breakpoint-medium: 'screen and (min-width: 40em) and (max-width: 64em)' !default;
-$breakpoint-large: 'screen and (min-width: 64em)' !default;
-`
+$breakpoint-large: 'screen and (min-width: 64em)' !default;`
 
 Now, your responsive suffixes will work like so:
 
